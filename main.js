@@ -7,7 +7,7 @@ function setup() {
 }
 
 function modelLoaded() {
-  console.log("Model loaded!")
+  console.log("Model loaded!");
 }
 
 function draw() {
@@ -22,7 +22,7 @@ function gotResult(error, results) {
   } else {
     window.alert("Sucessfully Identified");
     console.log(results);
-    document.getElementById('result_object_name').innerHTML = results[0].label
-    document.getElementById('result_object_accuracy').innerHTML = results[0].confidence.toFixed(3)
+    document.getElementById('result_object_name').innerHTML = results[0].label;
+    document.getElementById('result_object_accuracy').innerHTML = results[0].confidence.toFixed(3);
   }
 }
